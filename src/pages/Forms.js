@@ -33,7 +33,7 @@ const renderTabs = () =>{
         <Login submitHandler={handleSubmit}/>
       </Tab>
       <Tab label="Material-UI Login" value="/mui">
-        <LoginMUI submitHandler={handleSubmit}/>)
+        <LoginMUI submitHandler={handleSubmit}/>
       </Tab>
     </Tabs>
   )
