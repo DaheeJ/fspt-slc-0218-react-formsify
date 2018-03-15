@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Login from './components/Login'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
+import Forms from './pages/Forms'
 
 const App = () => (
-  <div>
-    <Login/>
-  </div>
+  <MuiThemeProvider>
+    <Forms/>
+  </MuiThemeProvider>
 )
 
 ReactDOM.render(<App />, document.getElementById('root'));

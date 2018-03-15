@@ -1,5 +1,15 @@
 import React from 'react'
 
-export default class extends React.Component {
+import Login from '../components/Login'
+import LoginMUI from '../components/LoginMUI'
 
+export default class extends React.Component {
+  render() {
+    return (
+      <div>
+        <Login/>
+        <LoginMUI/>
+      </div>
+    );
+  }
 }
