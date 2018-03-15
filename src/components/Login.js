@@ -11,8 +11,14 @@ export default class extends Component {
   }
   render () {
     const handleSubmit = (event) => {
-      event.preventDefault()
-      console.log(this.state.username + " : " + this.state.password)
+      const payload = {
+        event: event,
+        username: this.state.username,
+        password: this.state.password
+      }
+      this.props.submitHandler(payload)
+      // event.preventDefault()
+      // console.log(this.state.username + " : " + this.state.password)
     }
     // const handleTextChange = (event) => {
     //   this.setState({username: event.target.value})
@@ -23,7 +29,7 @@ export default class extends Component {
           {/*<input type="text" placeholder="Username" onChange={handleTextChange}/>*/}
           <input required type="text" placeholder="Username" onChange={e => this.setState({username: e.target.value})}/>
           <input type="password" placeholder="Password" onChange={e => this.setState({password: e.target.value})}/>
-          <input type="submit" value="Submit"/>
+          <input type="submit" value="Login"/>
         </form>
       </div>
     );
