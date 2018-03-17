@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import {BrowserRouter as Router} from 'react-router-dom'
 
-import Forms from './pages/Forms'
+import Home from './pages/Home'
 
 const App = () => (
   <MuiThemeProvider>
     <Router>
-      <Forms/>
+      <Home/>
     </Router>
   </MuiThemeProvider>
 )
